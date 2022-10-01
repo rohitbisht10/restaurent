@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+@import "mixin";
+@import "variable";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: $background-color;
+}
+
+.navigation__wrap {
+    border-radius: 3rem;
+    margin-top: 2rem;
+    background-color: $background-color2;
+
+
+    & .navbar-brand {
+        font-size: 2rem;
+        font-family: $font-family;
+        padding: .5rem 3rem;
+    }
+
+    & .navbar-toggler {
+        border: 0;
+        line-height: 2;
+        margin-right: 1rem;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    & .navbar-nav {
+        @include common;
+    }
+
+    & .nav-item {
+        margin-right: 5rem;
+        padding: 0rem 1rem;
+        font-size: 1.5rem;
+        list-style: none;
+    }
+
+    & .main-btn {
+        @include common;
+        text-decoration: none;
+        color: $background-color1;
+    }
+
+}
+//============nav end ==========
+
+//  ========== table start ============
+.table {
+    margin-top: 3rem;
+    padding-left: 4rem;
+
+    & h1 {
+        margin-top: 2rem;
+        // padding-left: 2rem;
+        @include h1;
+    }
+
+    & h4 {
+        @include h4;
+    }
+
+    & p {
+        @include p;
+    }
+
+    & .main__btn {
+        @include btn;
+    }
+
+    & .main__btn1 {
+        margin-left: 1rem;
+        @include btn;
+    }
+
+    & .main__btn:hover {
+        @include hover;
+    }
+
+    & .main__btn1:hover {
+        @include hover;
+    }
+}
+//============table end ===========
+
+// =======card start ===============
+.card__start {
+    padding-top: 6rem;
+
+    & h4 {
+        @include h4;
+        color: $btnbackground-color;
+    }
+
+    & h2 {
+        @include h2;
+    }
+
+
+    & .card {
+        padding: 1rem 2rem;
+        margin: 1rem 2rem;
+        background-color: $background-colorcard;
+        border: 1px solid #fff;
+        border-radius: 4rem;
+        align-items: center;
+
+        & p {
+            @include p;
+        }
+
+        & img {
+            width: 20rem;
+            height: 20rem
+        }
+
+        & .main__btn {
+            @include btn;
+
+            &:hover {
+                @include hover;
+            }
+        }
+
+    }
+}
+// ============card end ===============
+
+
+// ===== story start ============
+.story{ 
+    padding-top: 2rem;
+
+    & h1{
+        @include h1;
+    }
+   & h4{ 
+        @include h4;
+    }
+    & p {
+        @include p;
+        text-align: start;
+    }
+   & .main__btn {
+        @include btn;
+    }
+   & .main__btn:hover {
+        @include hover;
+    }
+}
+//=======end ===========
+
+
+// ============ start =========
+.ingredient {
+    padding-top: 2rem;
+
+    & h1{
+        @include h1;
+    }
+    & h4 {
+        @include h4 ;
+    }
+    & p {
+        @include p ;
+    }
+    & .main__btn {
+        @include btn;
+    }
+    & .main__btn:hover {
+        @include hover ;
+    }
+}
+// ========= end =========
+
+//======chef start ===========
+.chef__words{
+    width: 90vw;
+    height: auto;
+    background-color: white;
+    border: 1px solid $background-color;
+    border-radius: 6rem;
+    background-color: $background-colorcard;
+    padding-left: 2rem;
+
+
+    & h2{
+        @include h2;
+    }
+    & h4 {
+        @include h4;
+    }
+    & p {
+        @include p;
+    }
+    & .main__btn {
+        @include btn;
+    }
+    & .main__btn:hover {
+        @include hover ;
+    }
+}
+// ==========  section end ==========
+
+
+// ======= new card section start ==============
+
+.card__new {
+    padding-top: 6rem;
+
+    & h4 {
+        @include h4;
+        color: $btnbackground-color;
+    }
+
+    & h2 {
+        @include h2;
+    }
+    & .card__3{
+        margin: auto;
+    }
+      
+    & .card {
+        padding: 1rem 2rem;
+        margin: 1rem 2rem;
+        background-color: $background-colorcard;
+        border: 1px solid #fff;
+        border-radius: 4rem;
+        align-items: center;
+
+        & p {
+            @include p;
+        }
+
+        & img {
+            width: 20rem;
+            height: 20rem
+        }
+
+        & .main__btn {
+            @include btn;
+
+            &:hover {
+                @include hover;
+            }
+        }
+
+    }
+    & i {
+        color: $btnbackground-color;
+    }
+    
+}
+
+
+.footer__main{
+    background-color: $btnbackground-color;
+    width: 100vw;
+    height: auto;
+    min-height: 400px;
+    @include common;
+
+    & h2 {
+        @include h2;
+        color: #fff;
+    }
+
+    & p {
+        @include p ;
+    }
+
+    & .footer__right {
+        padding: 1rem 0 1rem 5rem;
+    }
+    & .col__lower {
+        @include common;
+        width: 80%;
+        border: 1px solid $background-color2;
+        border-radius: 2rem;
+        margin-top: 2rem;
+        
+  
+    & input{
+        background-color: $btnbackground-color;
+        opacity: 0;
+    }
+}
+  & .icon {
+        display: flex;
+        justify-content: flex-start;
+        // align-items: center;
+        letter-spacing: 0.2rem;
+
+    & i {
+       padding:1rem;
+       font-size: 2.5rem;
+    }
+}
+
+    & input:hover {
+        opacity: 1;
+        background-color: #fff;
+    }
+}
+
+//=========== end =============
+
+
+@media (max-width:968px){
+    
+        .footer__main h2 {
+            font-size: 2rem;
+        }
+
+        .table h1 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+
+        .ingredient h1{
+            font-size: 3.5rem;
+            line-height: 5rem;
+        }
+        .story h1 {
+            font-size: 3.5rem;
+            line-height: 5rem;
+        }
+
+        // .card__start .card {
+        //     padding: 0.6rem 0.6rem;
+            
+        // }
+        
+}
+
+@media (max-width:768px){
+    .card__new {
+        @include common;
+        .card{
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+        background-color: $background-colorcard;
+        border: 1px solid #fff;
+        border-radius: 4rem;
+        align-items: center;
+    } 
+}    
+}

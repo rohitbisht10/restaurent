@@ -1,0 +1,61 @@
+@mixin common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin h1 {
+    overflow: hidden;
+    font-size: 5rem;
+    text-transform: capitalize;
+    // color: $background-color2;
+    line-height: 7rem;
+    margin-bottom: 2rem;
+    font-family: $font-family;
+}
+@mixin h2{
+    overflow: hidden;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    font-family: $font-family;
+}
+@mixin h4{
+    overflow: hidden;
+    font-size: 2.6rem;
+    // font-weight: ;
+    text-transform: capitalize;
+   line-height: 3rem;
+   margin-bottom: 1rem;
+
+}
+
+@mixin p {
+    overflow: hidden;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+@mixin btn {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .6rem 2.5rem;
+    display: inline-block;
+    border: 1px solid #000 ;
+    color: black;
+    background-color: transparent;
+    border-radius: 5rem;
+    transition: all 0.4s ease-in-out;
+
+}
+
+@mixin hover {
+    background-color: $btnbackground-color;
+    color: #fff;
+    border-color: $background-color;
+}
